@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenQuest AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">🌿 GreenQuest AI</div>
+    <div class="tag">Touch Grass Challenge</div>
+</header>
+
+<section class="hero">
+    <p>YOUR NEXT ADVENTURE STARTS OUTSIDE</p>
+    <h1>Less scrolling.<br><span>More exploring.</span></h1>
+    <p>
+        Get a personalized outdoor activity based on your mood,
+        available time, and interests.
+    </p>
+</section>
+
+<main class="container">
+
+    <section class="card">
+        <h2>🍃 Plan Your Adventure</h2>
+
+        <label for="time">Available Time</label>
+        <select id="time">
+            <option value="10">10 minutes</option>
+            <option value="20">20 minutes</option>
+            <option value="30">30 minutes</option>
+        </select>
+
+        <label for="mood">Your Mood</label>
+        <select id="mood">
+            <option value="relax">I want to relax</option>
+            <option value="explore">I want an adventure</option>
+            <option value="learn">I want to learn</option>
+            <option value="active">I want to be active</option>
+            <option value="creative">I want to be creative</option>
+        </select>
+
+        <label for="place">Where Will You Go?</label>
+        <select id="place">
+            <option value="garden">Garden</option>
+            <option value="park">Park</option>
+            <option value="balcony">Balcony</option>
+            <option value="neighborhood">Neighborhood</option>
+            <option value="trail">Nature trail</option>
+        </select>
+
+        <label for="interest">Your Interest</label>
+        <input id="interest" type="text"
+               placeholder="Birds, plants, flowers...">
+
+        <button id="generateBtn">✨ Generate My Quest</button>
+    </section>
+
+    <section class="card">
+        <h2>🗺️ Your Outdoor Quest</h2>
+
+        <div class="result" id="result" aria-live="polite">
+            <div class="emoji">🌱</div>
+            <h3>Your adventure awaits!</h3>
+            <p>Choose your preferences and generate your first quest.</p>
+        </div>
+
+        <button id="timerBtn">⏱️ Start Outdoor Timer</button>
+
+        <p id="timer">Timer not started</p>
+
+        <div class="tips">
+            💚 <strong>Our rule:</strong> Read your mission, put your
+            phone away, and enjoy the real world!
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    Made with 🌱 for a greener, healthier world.
+</footer>
+
+</body>
+</html>
